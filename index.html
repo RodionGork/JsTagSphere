@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<title>JavaScript Sphere Tag-Cloud</title>
+
+<meta name="description" content="Main page for JavaScript Sphere Tag-Cloud opensource project"/>
+<meta name="keywords" content="javascript,cloud,tag,sphere"/>
+
+<script src="./cloud-min.js"></script>
+<script src="./jquery-min.js"></script>
+
+<script src="./mainpage.js"></script>
+
+</head>
+
+<body onLoad="main.init();">
+
+<style type="text/css">
+    a {text-decoration:none; color:blue;}
+    a:hover {color:red;}
+</style>
+
+<div id="clouder"></div>
+
+<div id="header">
+
+<center>
+<h3>
+If you've searched for simple to use <b>sphere tag-cloud</b> - you have just find one!
+</h3>
+<p>Simply add one script file to your page, provide an array of tag name-id pairs,
+create "Clouder" object... And... Seems that's all you need!</p>
+<p>No HTML5, No Cumulus, No jQuery, No Canvas, No any other horrible words :-)</p>
+</center>
+</div>
+
+<div id="links">
+<p><a href="http://sourceforge.net/projects/jstagsphere/files/">Downloads</a></p>
+<p><a href="http://sourceforge.net/projects/jstagsphere/">Project details</a></p>
+<p><a href="./test.html">Sample using page<br/>(see sources)</a></p>
+<p><a href="http://sourceforge.net/p/jstagsphere/discussion/general/thread/1e030684/">
+        Leave message,<br/>idea or question</a></p>
+<hr/>
+<h3>Project news</h3>
+<p>Rev20 (2012-03-13)<br/> with scaling parameters and insensitivity zone.</p>
+<p>Rev16 (2012-02-26)<br/> with transparency, proper z-order etc.</p>
+<p>Rev12 (2012-02-20)<br/> with parametrization introdiced</p>
+<p>Rev9 (2012-02-16)<br/> first stable release with speed and click improvement.</p>
+<p>Rev5 (2012-02-15)<br/> first beta release.</p>
+</div>
+
+<div id="footer">
+<center>
+Rendering time: <span id="render-time"></span>
+</div>
+
+<div id="settings">
+<p>Some settings<br/>click to change:</p>
+<p id="buttons"></p>
+</table>
+</div>
+
+</body>
+
+</html>
+
