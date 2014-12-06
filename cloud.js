@@ -240,6 +240,10 @@ function Clouder(params) {
         rho = Math.sqrt(x * x + y * y);
     } // setPos
     
+    function asPixels(number) {
+
+        return number.toString().concat("px");
+    } // asPixels
     
     function draw() {
         var filters = (typeof(document.body.filters) == "object");

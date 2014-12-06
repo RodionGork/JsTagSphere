@@ -92,6 +92,11 @@ createTags: function() {
     ];
 }, // createTags
 
+asPixels: function(number) {
+    
+    return number.toString().concat("px");
+}, // asPixels
+
 setupBlocks: function() {
     var w = document.body.clientWidth, h = document.body.clientHeight;
     var clouder = document.getElementById("clouder");
