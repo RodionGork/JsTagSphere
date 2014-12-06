@@ -17,11 +17,11 @@ function init() {
     var clouder = document.getElementById('clouder');
     
     clouder.style.border = "1px solid black";
-    clouder.style.width = w * 2 / 3;
-    clouder.style.height = h * 2 / 3;
+    clouder.style.width = asPixels(w * 2 / 3);
+    clouder.style.height = asPixels(h * 2 / 3);
     clouder.style.position = "absolute";
-    clouder.style.left = w / 6;
-    clouder.style.top = h / 6;
+    clouder.style.left = asPixels(w / 6);
+    clouder.style.top = asPixels(h / 6);
     clouder.style.border = "1px solid black";
     
     window.clouder = new Clouder({

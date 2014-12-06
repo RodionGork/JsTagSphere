@@ -107,34 +107,34 @@ setupBlocks: function() {
     
     //clouder.style.border = "1px solid black";
     clouder.style.position = "absolute";
-    clouder.style.width = w * 4 / 6;
-    clouder.style.height = h * 4 / 6;
-    clouder.style.left = w / 6;
-    clouder.style.top = h / 6;
+    clouder.style.width = this.asPixels(w * 4 / 6);
+    clouder.style.height = this.asPixels(h * 4 / 6);
+    clouder.style.left = this.asPixels(w / 6);
+    clouder.style.top = this.asPixels(h / 6);
 
     header.style.position = "absolute";
-    header.style.width = w;
-    header.style.height = h / 6;
-    header.style.left = 0;
-    header.style.top = 0;
+    header.style.width = this.asPixels(w);
+    header.style.height = this.asPixels(h / 6);
+    header.style.left = this.asPixels(0);
+    header.style.top = this.asPixels(0);
     
     links.style.position = "absolute";
-    links.style.width = w / 6;
-    links.style.height = 5 * h / 6;
-    links.style.left = 0;
-    links.style.top = h / 6;
+    links.style.width = this.asPixels(w / 6);
+    links.style.height = this.asPixels(5 * h / 6);
+    links.style.left = this.asPixels(0);
+    links.style.top = this.asPixels(h / 6);
     
     settings.style.position = "absolute";
-    settings.style.width = w / 6;
-    settings.style.height = 5 * h / 6;
-    settings.style.left = 5 * w / 6;
-    settings.style.top = h / 6;
+    settings.style.width = this.asPixels(w / 6);
+    settings.style.height = this.asPixels(5 * h / 6);
+    settings.style.left = this.asPixels(5 * w / 6);
+    settings.style.top = this.asPixels(h / 6);
     
     footer.style.position = "absolute";
-    footer.style.width = 4 * w / 6;
-    footer.style.height = h / 6;
-    footer.style.left = w / 6;
-    footer.style.top = 5 * h / 6;
+    footer.style.width = this.asPixels(4 * w / 6);
+    footer.style.height = this.asPixels(h / 6);
+    footer.style.left = this.asPixels(w / 6);
+    footer.style.top = this.asPixels(5 * h / 6);
     
 }, // setupBlocks
 
