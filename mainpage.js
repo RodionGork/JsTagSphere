@@ -98,7 +98,7 @@ asPixels: function(number) {
 }, // asPixels
 
 setupBlocks: function() {
-    var w = document.body.clientWidth, h = document.body.clientHeight;
+    var w = Math.max(window.innerWidth, document.body.clientWidth), h = Math.max(window.innerHeight, document.body.clientHeight);
     var clouder = document.getElementById("clouder");
     var header = document.getElementById("header");
     var footer = document.getElementById("footer");
