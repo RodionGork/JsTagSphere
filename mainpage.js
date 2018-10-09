@@ -93,7 +93,7 @@ createTags: function() {
 }, // createTags
 
 setupBlocks: function() {
-    var w = document.body.clientWidth, h = document.body.clientHeight;
+    var w = Math.max(window.innerWidth, document.body.clientWidth), h = Math.max(window.innerHeight, document.body.clientHeight);
     var clouder = document.getElementById("clouder");
     var header = document.getElementById("header");
     var footer = document.getElementById("footer");
@@ -102,34 +102,34 @@ setupBlocks: function() {
     
     //clouder.style.border = "1px solid black";
     clouder.style.position = "absolute";
-    clouder.style.width = w * 4 / 6;
-    clouder.style.height = h * 4 / 6;
-    clouder.style.left = w / 6;
-    clouder.style.top = h / 6;
+    clouder.style.width = asPixels(w * 4 / 6);
+    clouder.style.height = asPixels(h * 4 / 6);
+    clouder.style.left = asPixels(w / 6);
+    clouder.style.top = asPixels(h / 6);
 
     header.style.position = "absolute";
-    header.style.width = w;
-    header.style.height = h / 6;
-    header.style.left = 0;
-    header.style.top = 0;
+    header.style.width = asPixels(w);
+    header.style.height = asPixels(h / 6);
+    header.style.left = asPixels(0);
+    header.style.top = asPixels(0);
     
     links.style.position = "absolute";
-    links.style.width = w / 6;
-    links.style.height = 5 * h / 6;
-    links.style.left = 0;
-    links.style.top = h / 6;
+    links.style.width = asPixels(w / 6);
+    links.style.height = asPixels(5 * h / 6);
+    links.style.left = asPixels(0);
+    links.style.top = asPixels(h / 6);
     
     settings.style.position = "absolute";
-    settings.style.width = w / 6;
-    settings.style.height = 5 * h / 6;
-    settings.style.left = 5 * w / 6;
-    settings.style.top = h / 6;
+    settings.style.width = asPixels(w / 6);
+    settings.style.height = asPixels(5 * h / 6);
+    settings.style.left = asPixels(5 * w / 6);
+    settings.style.top = asPixels(h / 6);
     
     footer.style.position = "absolute";
-    footer.style.width = 4 * w / 6;
-    footer.style.height = h / 6;
-    footer.style.left = w / 6;
-    footer.style.top = 5 * h / 6;
+    footer.style.width = asPixels(4 * w / 6);
+    footer.style.height = asPixels(h / 6);
+    footer.style.left = asPixels(w / 6);
+    footer.style.top = asPixels(5 * h / 6);
     
 }, // setupBlocks
 
