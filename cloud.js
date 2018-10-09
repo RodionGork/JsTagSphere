@@ -240,6 +240,10 @@ function Clouder(params) {
         rho = Math.sqrt(x * x + y * y);
     } // setPos
     
+    function asPixels(number) {
+
+        return number.toString().concat("px");
+    } // asPixels
     
     function draw() {
         var filters = (typeof(document.body.filters) == "object");
@@ -265,14 +269,14 @@ function Clouder(params) {
             var size = fontSize + o.z * fontShift;
             o.factor = size / fontSize;
             if (o.width == 0) {
-                o.width = o.span.clientWidth / o.factor;
-                o.height = o.span.clientHeight / o.factor;
+                o.width = asPixels(o.span.clientWidth / o.factor);
+                o.height = asPixels(o.span.clientHeight / o.factor);
             } // if
-            o.span.style.fontSize = Math.round(size);
+            o.span.style.fontSize = asPixels(Math.round(size));
             o.screenX = w * (o.x * xScale + 1) / 2;
-            o.span.style.left = o.screenX - o.width * o.factor / 2;
+            o.span.style.left = asPixels(o.screenX - parseInt(o.width) * o.factor / 2);
             o.screenY = h * (o.y * yScale + 1) / 2;
-            o.span.style.top = o.screenY - o.height * o.factor / 2;
+            o.span.style.top = asPixels(o.screenY - parseInt(o.height) * o.factor / 2);
             o.span.style.zIndex = o.z >= 0 ? 10 : 5;
             var opa = (Math.sin(o.z * Math.PI / 2) / 2 + 0.5) * (1 - opaque) + opaque;
             if (!filters) {
