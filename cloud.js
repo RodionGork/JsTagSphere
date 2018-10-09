@@ -2,7 +2,7 @@
 Copyright 2012 Rodion Gorkovenko
 
 This file is a part of JsTagSphere
-(project JsTagSphere - JavaScript sphere tag cloud - http://jstagsphere.sf.net)
+(project JsTagSphere - JavaScript sphere tag cloud - https://github.com/RodionGork/JsTagSphere)
 
 JsTagSphere is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -240,11 +240,6 @@ function Clouder(params) {
         rho = Math.sqrt(x * x + y * y);
     } // setPos
     
-    function asPixels(number) {
-
-        return number.toString().concat("px");
-    } // asPixels
-    
     function draw() {
         var filters = (typeof(document.body.filters) == "object");
 
@@ -445,3 +440,6 @@ function Clouder(params) {
     
 } // Clouder
 
+function asPixels(number) {
+    return number + 'px';
+} // asPixels

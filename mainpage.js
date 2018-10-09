@@ -92,11 +92,6 @@ createTags: function() {
     ];
 }, // createTags
 
-asPixels: function(number) {
-    
-    return number.toString().concat("px");
-}, // asPixels
-
 setupBlocks: function() {
     var w = Math.max(window.innerWidth, document.body.clientWidth), h = Math.max(window.innerHeight, document.body.clientHeight);
     var clouder = document.getElementById("clouder");
@@ -107,34 +102,34 @@ setupBlocks: function() {
     
     //clouder.style.border = "1px solid black";
     clouder.style.position = "absolute";
-    clouder.style.width = this.asPixels(w * 4 / 6);
-    clouder.style.height = this.asPixels(h * 4 / 6);
-    clouder.style.left = this.asPixels(w / 6);
-    clouder.style.top = this.asPixels(h / 6);
+    clouder.style.width = asPixels(w * 4 / 6);
+    clouder.style.height = asPixels(h * 4 / 6);
+    clouder.style.left = asPixels(w / 6);
+    clouder.style.top = asPixels(h / 6);
 
     header.style.position = "absolute";
-    header.style.width = this.asPixels(w);
-    header.style.height = this.asPixels(h / 6);
-    header.style.left = this.asPixels(0);
-    header.style.top = this.asPixels(0);
+    header.style.width = asPixels(w);
+    header.style.height = asPixels(h / 6);
+    header.style.left = asPixels(0);
+    header.style.top = asPixels(0);
     
     links.style.position = "absolute";
-    links.style.width = this.asPixels(w / 6);
-    links.style.height = this.asPixels(5 * h / 6);
-    links.style.left = this.asPixels(0);
-    links.style.top = this.asPixels(h / 6);
+    links.style.width = asPixels(w / 6);
+    links.style.height = asPixels(5 * h / 6);
+    links.style.left = asPixels(0);
+    links.style.top = asPixels(h / 6);
     
     settings.style.position = "absolute";
-    settings.style.width = this.asPixels(w / 6);
-    settings.style.height = this.asPixels(5 * h / 6);
-    settings.style.left = this.asPixels(5 * w / 6);
-    settings.style.top = this.asPixels(h / 6);
+    settings.style.width = asPixels(w / 6);
+    settings.style.height = asPixels(5 * h / 6);
+    settings.style.left = asPixels(5 * w / 6);
+    settings.style.top = asPixels(h / 6);
     
     footer.style.position = "absolute";
-    footer.style.width = this.asPixels(4 * w / 6);
-    footer.style.height = this.asPixels(h / 6);
-    footer.style.left = this.asPixels(w / 6);
-    footer.style.top = this.asPixels(5 * h / 6);
+    footer.style.width = asPixels(4 * w / 6);
+    footer.style.height = asPixels(h / 6);
+    footer.style.left = asPixels(w / 6);
+    footer.style.top = asPixels(5 * h / 6);
     
 }, // setupBlocks
 

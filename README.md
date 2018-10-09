@@ -1,14 +1,15 @@
-from [http://jstagsphere.sf.net](http://jstagsphere.sf.net)
+# JsTagSphere
 
 A small script to create the spherical tag cloud with funny scrolling effect when hovering
-with mouse. See the project page (link above) for an example.
+with mouse. See live demo here: https://rodiongork.github.io/JsTagSphere/
 
-It is recommended to download package with latest revision in the archive file name.
+Beware for though it is funny, it may be not extremely convenient for end-users.
+E.g. if you create list of content, it would be good to provide some alternatives form also,
+like a table :)
 
-Inside a package you will find:
+Feel free to download files separately or at once in a zip.
+Also you could just use the script directly from your html, e.g.
 
-- `cloud.js` - library itself;
-- `cloud-min.js` - minified library version;
-- `test.html` - usage example;
-- `LICENSE.txt` - Gnu Public License text;
-- `README.md` - this file.
+    <script src="https://rodiongork.github.io/JsTagSphere/cloud.js"></script>
+
+moved long time ago from [http://jstagsphere.sf.net](http://jstagsphere.sf.net)
