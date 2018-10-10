@@ -187,6 +187,7 @@ function Clouder(params) {
         for (var i = 0; i < container.children.length; i++) {
             var span = container.children[i];
             span.style.position = "absolute";
+            span.style.cursor = "pointer";
             var c = {};
             c.span = span;
             c.width = 0;
@@ -252,6 +253,7 @@ function Clouder(params) {
                 o.span.innerHTML = o.text;
                 o.span.style.fontWeight = "bold";
                 o.span.style.position = "absolute";
+                o.span.style.cursor = "pointer";
                 var c = 1;
                 for (var i in colorMax) {
                     c = c * 256 + Math.floor((colorMax[i] - colorMin[i]) * o.weight + colorMin[i]);
